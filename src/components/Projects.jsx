@@ -8,7 +8,7 @@ const projects = [
     github: "https://github.com/Realgorithm/healthcare-dashboard",
     demo: "https://healthcare-dashboard-six-kappa.vercel.app/",
     image:
-      "https://private-user-images.githubusercontent.com/107784329/450041363-e31c90a1-0ce1-4ada-bbe6-20c85f51b339.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg4NTI0NjUsIm5iZiI6MTc0ODg1MjE2NSwicGF0aCI6Ii8xMDc3ODQzMjkvNDUwMDQxMzYzLWUzMWM5MGExLTBjZTEtNGFkYS1iYmU2LTIwYzg1ZjUxYjMzOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYwMlQwODE2MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OTNiZjFiYjRiZTMyZjZmNDU2NTExZThiZjkxYmEyZDBmNWQxZjAzZDU5YTM2ZTQ3ZjA4MmQzNzc5YmY4YTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.XjZr2NAmgOEtAQZ__VlNUToslZD0fmYWnXjk_lKPd3A",
+      "https://private-user-images.githubusercontent.com/107784329/450041363-e31c90a1-0ce1-4ada-bbe6-20c85f51b339.png",
   },
   {
     id: 2,
