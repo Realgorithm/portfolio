@@ -1,0 +1,13 @@
+// Import base
+@import './base/_reset';
+@import './base/_variables';
+@import './base/_mixins';
+
+// Import components
+@import './components/_about';
+@import './components/_contact';
+@import './components/_projects';
+@import './components/_skills';
+@import './components/_header';
+@import './components/_hero';
+@import './components/_footer';

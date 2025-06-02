@@ -1,0 +1,24 @@
+/* Reset margins/padding and set box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Anchor tag reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}

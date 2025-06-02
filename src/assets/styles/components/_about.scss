@@ -1,0 +1,71 @@
+.about {
+  padding: 4rem 0;
+  background: $color-light;
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 $spacing-lg;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: $spacing-lg;
+    color: $color-dark;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: $color-primary;
+      border-radius: 2px;
+    }
+  }
+
+  &__content {
+    color: lighten($color-dark, 20%);
+    line-height: 1.8;
+    margin-bottom: $spacing-lg;
+
+    p {
+      margin-bottom: $spacing-md;
+    }
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-sm;
+    margin-top: $spacing-lg;
+
+    span {
+      background: $color-light;
+      padding: $spacing-sm $spacing-md;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: $color-dark;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+
+      &:hover {
+        background: $color-secondary;
+        color: $color-white;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  @include respond-to($breakpoint-tablet) {
+    &__content {
+      font-size: 1.1rem;
+    }
+  }
+}
