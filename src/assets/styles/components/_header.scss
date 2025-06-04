@@ -3,19 +3,25 @@
   top: 0;
   width: 100%;
   background: rgba($color-dark, 0.9);
-  padding: $spacing-md;
+  padding: 1rem;
   z-index: 1000;
   backdrop-filter: blur(10px);
 
   &__nav {
-    @include flex-center;
-    gap: $spacing-lg;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 
-    &-link {
+    &__link {
       color: $color-white;
       font-weight: 600;
       transition: color 0.3s;
       position: relative;
+      padding: 0.5rem 0;
+
+      &:hover {
+        color: $color-secondary;
+      }
 
       &.active {
         color: $color-primary;
@@ -23,17 +29,23 @@
         &::after {
           content: '';
           position: absolute;
-          bottom: -5px;
+          bottom: 0;
           left: 0;
           width: 100%;
           height: 2px;
           background: $color-primary;
+          animation: underline 0.3s ease-out;
         }
       }
     }
   }
-
   @include respond-to($breakpoint-tablet) {
     padding: $spacing-md $spacing-lg;
   }
 }
+
+@keyframes underline {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+

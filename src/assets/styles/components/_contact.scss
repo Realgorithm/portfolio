@@ -1,6 +1,6 @@
 .contact {
   padding: 4rem 0;
-  background: linear-gradient(to right, $color-dark, $color-primary);
+  background: linear-gradient(to right, $color-primary-dark, $color-secondary-light);
 
   &__container {
     max-width: 800px;
@@ -10,9 +10,7 @@
   }
 
   &__title {
-    text-align: center;
-    margin-bottom: $spacing-lg;
-    color: $color-white;
+    @include section-title; // Uses defaults
   }
 
   &__form {
@@ -36,17 +34,18 @@
     }
 
     button {
-      background: $color-secondary;
+      background: $color-secondary-dark;
       color: $color-white;
       border: none;
+      font-size: 1rem;
       padding: $spacing-sm $spacing-lg;
-      border-radius: 6px;
+      border-radius: 60px;
       cursor: pointer;
       transition: background 0.3s;
 
       &:hover {
-        background: darken($color-primary, 10%);
-        border: 1px solid $color-secondary;
+        background: darken($color-primary-light, 10%);
+        border: 1px solid $color-secondary-light;
       }
     }
   }
